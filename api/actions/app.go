@@ -51,6 +51,20 @@ func App() *buffalo.App {
 		app.Use(contenttype.Set("application/json"))
 
 		app.GET("/", HomeHandler)
+
+		// on préfixe nos nouvelles routes par /api/v1
+		g := app.Group("/api/v1")
+
+		// on déclare notre UserResource
+		ur := &UserResource{}
+
+		// on déclare notre route get qu'on rattache au handler UserResource.List
+		// le path est donc /api/v1/users
+		g.GET("/users", ur.List)
+
+		g.POST("/users", ur.Create)
+
+		g.GET("/users/{id}", ur.Show)
 	}
 
 	return app
