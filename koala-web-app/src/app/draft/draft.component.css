@@ -10,6 +10,10 @@ header {
     height: 50px;
 }
 
+.up {
+    height: 20px;
+}
+
 .headerTabs {
     float: right;
 }
