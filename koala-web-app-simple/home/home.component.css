@@ -1,0 +1,52 @@
+.header {
+    border-bottom: solid black 2px;
+    height: 100px;
+    background-color: white;
+}
+
+.logoSpan {
+    float: left;
+}
+
+.headerTabs {
+    height: auto;
+    margin-top: 30px;
+    float: right;
+}
+
+.logo {
+    height: 50px;
+}
+
+.upvote {
+    height: 20px;
+}
+
+.topics {
+    border: solid black 1px;
+    text-align: left;
+}
+
+.subtopics {
+    border: solid black 1px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.subtopics th {
+    border: solid black 1px;
+}
+
+h1,
+h2 {
+    text-align: left;
+}
+
+footer {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 5px;
+    margin-bottom: 5px;
+    border-top: 1px solid black;
+    background-color: white;
+}

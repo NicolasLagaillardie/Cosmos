@@ -1,0 +1,19 @@
+header {
+    border-bottom: solid black 2px;
+}
+
+.logoSpan {
+    float: left;
+}
+
+.logo {
+    height: 50px;
+}
+
+.up {
+    height: 20px;
+}
+
+.headerTabs {
+    float: right;
+}

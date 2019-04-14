@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="home.component.css">
+    <meta charset="utf-8">
+    <title>
+        Home
+    </title>
+
+    <script src="../keycloak.js"></script>
+    <script>
+        var keycloak = Keycloak();
+        keycloak.init({
+            onLoad: 'login-required'
+        }).success(function(authenticated) {
+            console.log(authenticated ? 'authenticated' : 'not authenticated');
+        }).error(function() {
+            console.log('failed to initialize');
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="logoSpan">
+                <th>
+                    <h1>
+                        <img src="../assets/images/icons/koala-silhouette.png" title="Logo koala" alt="Logo koala" class="logo" onclick="window.location.href='../home/home.component.html';">
+                    </h1>
+                </th>
+            </div>
+            <div class="headerTabs">
+                <table>
+                    <tr>
+                        <th>
+                            <button id="about" onclick="windows.location.href='../about/about.component.html;'">
+                                About Governmint
+                            </button>
+                        </th>
+                        <th>
+                            <button id="notifications">
+                                Notifications
+                            </button>
+                        </th>
+                        <th>
+
+                            <button id="profile">
+                                Profile
+                            </button>
+                        </th>
+                        <th>
+                            <button id="forums">
+                                Drafts
+                            </button>
+                        </th>
+                        <th>
+                            <button id="logout">
+                                Logout
+                            </button>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </header>
+
+    <center>
+        <article>
+            <section>
+                <h2>
+                    Discussions
+                </h2>
+
+                <div onclick="window.location.href='../forum/forum.component.html';">
+                    <table class="topics">
+                        <tr>
+                            <th>
+                                <h3>
+                                    General
+                                </h3>
+                            </th>
+                            <th>
+                                <img src="../assets/images/icons/iconfinder_speech_bubble.png" title="Bubble" alt="Bubble" class="upvote">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </span>
+                            </th>
+                            <th>
+                                5110
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div style="clear:both;">
+                    <p>
+                    </p>
+                </div>
+                <div onclick="window.location.href='../forum/forum.component.html';">
+                    <table class="topics">
+                        <tr>
+                            <th>
+                                <h3>
+                                    Economics
+                                </h3>
+                            </th>
+                            <th>
+                                <img src="../assets/images/icons/iconfinder_speech_bubble.png" title="Bubble" alt="Bubble" class="upvote">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </span>
+                            </th>
+                            <th>
+                                2233
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div style="clear:both;">
+                    <p>
+                    </p>
+                </div>
+                <div onclick="window.location.href='../forum/forum.component.html';">
+                    <table class="topics">
+                        <tr>
+                            <th>
+                                <h3>
+                                    Updates
+                                </h3>
+                            </th>
+                            <th>
+                                <img src="../assets/images/icons/iconfinder_speech_bubble.png" title="Bubble" alt="Bubble" class="upvote">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </span>
+                            </th>
+                            <th>
+                                158
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div style="clear:both;">
+                    <p>
+                    </p>
+                </div>
+                <div onclick="window.location.href='../forum/forum.component.html';">
+                    <table class="topics">
+                        <tr>
+                            <th>
+                                <h3>
+                                    Feedback
+                                </h3>
+                            </th>
+                            <th>
+                                <img src="../assets/images/icons/iconfinder_speech_bubble.png" title="Bubble" alt="Bubble" class="upvote">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </span>
+                            </th>
+                            <th>
+                                9201
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    Language-specific
+                </h2>
+
+                <table class="subtopics">
+                    <tr>
+                        <th>
+                            <h3>
+                                French
+                            </h3>
+                        </th>
+                        <th>
+                            <img src="../assets/images/icons/iconfinder_speech_bubble.png" title="Bubble" alt="Bubble" class="upvote">
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+                            <h3>
+                                German
+                            </h3>
+                        </th>
+                        <th>
+                            <img src="../assets/images/icons/iconfinder_speech_bubble.png" title="Bubble" alt="Bubble" class="upvote">
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+                            <h3>
+                                Spanish
+                            </h3>
+                        </th>
+                        <th>
+                            <img src="../assets/images/icons/iconfinder_speech_bubble.png" title="Bubble" alt="Bubble" class="upvote">
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <span>
+                                J'aime les croissants.
+                            </span>
+                        </th>
+                        <th>
+                            420
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+                            <span>
+                                Ich bin ein berliner.
+                            </span>
+                        </th>
+                        <th>
+                            420
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+                            <span>
+                                Vamos a la playa.
+                            </span>
+                        </th>
+                        <th>
+                            420
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <h3>
+                                Italian
+                            </h3>
+                        </th>
+                        <th>
+                            <img src="../assets/images/icons/iconfinder_speech_bubble.png" title="Bubble" alt="Bubble" class="upvote">
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+                            <h3>
+                                Chinese
+                            </h3>
+                        </th>
+                        <th>
+                            <img src="../assets/images/icons/iconfinder_speech_bubble.png" title="Bubble" alt="Bubble" class="upvote">
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+                            <h3>
+                                Japanese
+                            </h3>
+                        </th>
+                        <th>
+                            <img src="../assets/images/icons/iconfinder_speech_bubble.png" title="Bubble" alt="Bubble" class="upvote">
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <span>
+                                Dolce vita.
+                            </span>
+                        </th>
+                        <th>
+                            420
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+                            <span>
+                                我不會說中文.
+                            </span>
+                        </th>
+                        <th>
+                            420
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+                            <span>
+                                Omae wa mou shindeiru.
+                            </span>
+                        </th>
+                        <th>
+                            420
+                        </th>
+                    </tr>
+                </table>
+            </section>
+        </article>
+
+        <footer>
+            Website made by the team Koala
+        </footer>
+
+    </center>
+
+    <script src="../ajax.js"></script>
+    <script src="home.component.js"></script>
+
+</body>
+
+</html>

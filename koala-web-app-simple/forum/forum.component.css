@@ -1,0 +1,19 @@
+header {
+    border-bottom: 2px solid black;
+}
+
+.logoSpan {
+    float: left;
+}
+
+.upvote {
+    height: 20px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.headerTabs {
+    float: right;
+}
